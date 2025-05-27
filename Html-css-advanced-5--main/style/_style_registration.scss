@@ -1,0 +1,90 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20.5px;
+    }
+    &__title {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__input {
+        width: 360px;
+        padding: 13px 0 16px 17px;
+        border: 1px solid #A4A4A4;
+        stroke-width: 3px;
+        stroke: #A4A4A4;
+    }
+    &__checkboxes {
+        margin-top: 31px;
+        margin-bottom: 33px;
+        display: flex;
+        gap: 20px;
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: inline-flex;
+        align-items: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    &__text {
+        margin-top: 15px;
+        margin-bottom: 39px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__button {
+        padding: 16px 0;
+        width: 167px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: #FFF;
+        background-color: #F16D7F;
+        border: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__column {
+        list-style-type: none;
+    }
+    &__li {
+        padding-bottom: 16px;
+        display: flex;
+        gap: 28px;
+        &::before {
+            content: url(../img/Vector1.svg);
+        }
+    }
+}

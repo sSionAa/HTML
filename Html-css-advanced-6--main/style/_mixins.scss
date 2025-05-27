@@ -1,0 +1,54 @@
+@mixin center() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center_coloumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin space {
+    @include center();
+    justify-content: space-between;
+}
+
+@mixin transform($pix) {
+    transform: scale(1.2) translateY($pix);
+    z-index: 2;
+    transition: 1s;
+}
+
+@mixin text_settings($weigth, $size, $height, $color) {
+    @include promo_text_settings($weigth, $size, $height, $color);
+    text-align: center;
+}
+
+@mixin promo_text_settings($weigth, $size, $height, $color) {
+    font-style: normal;
+    font-weight: $weigth;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin product_text_setting($weigth, $size, $height, $color) {
+    @include text_settings($weigth, $size, $height, $color);
+    margin-top: 6px;
+}
+
+@mixin flex($align-item) {
+    display: flex;
+    align-items: $align-item;
+    gap: 41px;
+}
+
+@mixin style {
+    a {
+        text-decoration: none;
+    }
+}
